@@ -12,7 +12,7 @@ class _MyAboutState extends State<MyAbout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         elevation: 0,
@@ -68,33 +68,6 @@ class _MyAboutState extends State<MyAbout> {
                     child: TextButton(onPressed: (){}, child: Text('Hire Me'),style:TextButton.styleFrom(backgroundColor:Colors.white,primary: Colors.black ),
                     ),
                   ),
-                  SizedBox(
-                    height: 40 ,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                    IconButton(
-                        onPressed: (){},
-                        icon: Icon(
-                      FontAwesomeIcons.instagram,
-                          color: Colors.white,
-                        )),
-                    IconButton(
-                        onPressed: (){},
-                        icon: Icon(
-                          FontAwesomeIcons.linkedin,
-                          color: Colors.white,
-                        )),
-                    IconButton(
-                        onPressed: (){},
-                        icon: Icon(
-                          FontAwesomeIcons.github,
-                          color: Colors.white,
-                        ))
-                  ],
-
-                  )
                 ],
               ),
             ),

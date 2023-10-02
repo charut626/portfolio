@@ -60,6 +60,34 @@ class _MyHomeState extends State<MyHome> {
       backgroundColor: Colors.white,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        leading: PopupMenuButton(
+          color: Colors.black,
+          icon: Icon(Icons.menu),
+          itemBuilder: (context) => [
+            PopupMenuItem(
+                child: TextButton(
+              child: Text('Projects',style: TextStyle(
+                color: Colors.white
+                ),),
+              onPressed: (){
+    Navigator.pushNamed(context, 'projects');
+    }
+            ),
+              value: 1,
+            ),
+      PopupMenuItem(
+          child: TextButton(
+            child: Text('About Me',style: TextStyle(
+              color: Colors.white
+            ),),
+            onPressed: (){
+    Navigator.pushNamed(context, 'about');
+    }
+          ),
+        value: 2,
+      ),
+    ],
+        ),
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
@@ -93,6 +121,7 @@ class _MyHomeState extends State<MyHome> {
                     Text(
                       'Charu Thakur',
                       style: TextStyle(
+                        fontFamily: 'Soho',
                           color: Colors.white,
                           fontSize: 40,
                           fontWeight: FontWeight.bold),
@@ -103,6 +132,7 @@ class _MyHomeState extends State<MyHome> {
                     Text(
                         'Software Developer',
                       style: TextStyle(
+                        fontFamily: 'Soho',
                           color: Colors.white,
                         fontSize: 20,
                        ),
